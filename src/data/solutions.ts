@@ -16,7 +16,7 @@ export const solutionsData = [
     description:
       "High-performance wired and wireless networks engineered for uptime, security and scale.",
     image:
-      "https://images.unsplash.com/photo-1558494949-efc5256cf2c9?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop",
     capabilities: ["SD-WAN", "Wi-Fi 6", "Network Security", "24/7 Monitoring"],
   },
   {

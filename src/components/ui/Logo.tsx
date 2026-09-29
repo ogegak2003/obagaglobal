@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Globe } from "lucide-react";
 
 interface LogoProps {
   variant?: "dark" | "light";
@@ -8,29 +7,25 @@ interface LogoProps {
 }
 
 export function Logo({ variant = "dark", size = "md", className }: LogoProps) {
-  const textColor = variant === "dark" ? "text-white" : "text-background";
-  const iconColor = "text-primary";
-  
-  const sizes = {
-    sm: { icon: 20, text: "text-lg", sub: "text-[8px]" },
-    md: { icon: 28, text: "text-2xl", sub: "text-[10px]" },
-    lg: { icon: 40, text: "text-4xl", sub: "text-xs" },
+  // Since the provided logo has a white background, we use mix-blend-mode 
+  // to make it blend seamlessly on dark backgrounds without a visible box.
+  const sizeClasses = {
+    sm: "h-8 w-auto",
+    md: "h-12 w-auto",
+    lg: "h-20 w-auto",
   };
 
   return (
-    <div className={cn("flex items-center gap-2", className)}>
-      <div className="relative flex items-center justify-center">
-        <Globe size={sizes[size].icon} className={iconColor} strokeWidth={1.5} />
-        <div className="absolute w-full h-[1px] bg-primary rotate-45 scale-110" />
-      </div>
-      <div className="flex flex-col leading-none">
-        <span className={cn("font-bold tracking-wider", sizes[size].text, textColor)}>
-          OBAGA<span className="text-primary">GLOBAL</span>
-        </span>
-        <span className={cn("tracking-[0.2em] font-medium text-right", sizes[size].sub, textColor)}>
-          LTD
-        </span>
-      </div>
+    <div className={cn("relative flex items-center justify-center", className)}>
+      <img
+        src="/obagaglobal-logo.png"
+        alt="OBAGAGLOBAL LTD - Innovation Beyond Borders"
+        className={cn(
+          "object-contain transition-all duration-300",
+          sizeClasses[size],
+          variant === "dark" ? "mix-blend-screen" : "mix-blend-multiply"
+        )}
+      />
     </div>
   );
 }

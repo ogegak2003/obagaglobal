@@ -43,10 +43,10 @@ export function Header() {
       {/* Main Nav */}
       <div className={cn(
         "transition-all duration-300 border-b border-transparent",
-        isScrolled ? "bg-background/95 backdrop-blur-lg border-border py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-background/95 backdrop-blur-lg border-border py-2" : "bg-transparent py-4"
       )}>
         <Container className="flex items-center justify-between">
-          <Link to="/">
+          <Link to="/" className="flex items-center">
             <Logo size="md" />
           </Link>
 
