@@ -1,0 +1,186 @@
+import { Cloud, Network, Headphones, Code2, ShieldCheck, TrendingUp } from "lucide-react";
+
+export const serviceDetails = {
+  cloud: {
+    id: "cloud",
+    icon: Cloud,
+    title: "Cloud Solutions",
+    tagline: "Scalable, secure and reliable cloud services for your business.",
+    hero: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop",
+    overview:
+      "We help organizations design, migrate and operate cloud environments that are secure, resilient and cost-efficient. Whether you are moving to public cloud, building a hybrid model or optimizing existing workloads, our engineers deliver end-to-end cloud solutions.",
+    capabilities: [
+      "Cloud migration and modernization",
+      "Hybrid and multi-cloud architecture",
+      "Disaster recovery and business continuity",
+      "Cloud cost optimization and governance",
+      "Container and Kubernetes platforms",
+      "Backup and storage solutions",
+    ],
+    benefits: [
+      "Reduce infrastructure costs",
+      "Improve scalability and performance",
+      "Strengthen security and compliance",
+      "Enable faster innovation",
+    ],
+    technologies: ["AWS", "Microsoft Azure", "Google Cloud", "Kubernetes", "Terraform", "VMware"],
+    process: [
+      { step: "01", title: "Assess", desc: "We audit your current environment and goals." },
+      { step: "02", title: "Design", desc: "We architect a cloud solution tailored to you." },
+      { step: "03", title: "Migrate", desc: "We execute with minimal disruption." },
+      { step: "04", title: "Optimize", desc: "We monitor, secure and continuously improve." },
+    ],
+  },
+  networking: {
+    id: "networking",
+    icon: Network,
+    title: "Networking",
+    tagline: "Reliable and high performance network infrastructure.",
+    hero: "https://images.unsplash.com/photo-1558494949-efc5256cf2c9?q=80&w=2070&auto=format&fit=crop",
+    overview:
+      "We design, deploy and manage enterprise networks that keep your business connected, secure and fast. From branch offices to data centers, we deliver networking solutions engineered for uptime and scale.",
+    capabilities: [
+      "LAN, WAN and SD-WAN design",
+      "Wi-Fi 6 and wireless optimization",
+      "Data center networking",
+      "Network security and segmentation",
+      "24/7 network monitoring",
+      "Structured cabling and deployment",
+    ],
+    benefits: [
+      "Higher uptime and reliability",
+      "Improved performance and coverage",
+      "Stronger security posture",
+      "Scalable for future growth",
+    ],
+    technologies: ["Cisco", "Juniper", "Fortinet", "Ubiquiti", "Aruba", "Palo Alto"],
+    process: [
+      { step: "01", title: "Survey", desc: "We map your sites and requirements." },
+      { step: "02", title: "Design", desc: "We produce a resilient network blueprint." },
+      { step: "03", title: "Deploy", desc: "We install, configure and test." },
+      { step: "04", title: "Support", desc: "We monitor and maintain 24/7." },
+    ],
+  },
+  "managed-it": {
+    id: "managed-it",
+    icon: Headphones,
+    title: "ICT Support & Managed Services",
+    tagline: "Proactive support to keep your business running 24/7.",
+    hero: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop",
+    overview:
+      "Our managed services team acts as your extended IT department, delivering proactive monitoring, helpdesk support, endpoint management and strategic guidance so your business never slows down.",
+    capabilities: [
+      "24/7 helpdesk and remote support",
+      "Endpoint and device management",
+      "Patch and vulnerability management",
+      "Asset lifecycle management",
+      "On-site engineering support",
+      "IT strategy and consulting",
+    ],
+    benefits: [
+      "Predictable IT costs",
+      "Faster issue resolution",
+      "Reduced downtime",
+      "Access to certified experts",
+    ],
+    technologies: ["Microsoft 365", "Intune", "ConnectWise", "NinjaOne", "Windows Server", "Linux"],
+    process: [
+      { step: "01", title: "Onboard", desc: "We document and assess your environment." },
+      { step: "02", title: "Stabilize", desc: "We resolve immediate risks and issues." },
+      { step: "03", title: "Optimize", desc: "We standardize and automate." },
+      { step: "04", title: "Support", desc: "We provide ongoing proactive care." },
+    ],
+  },
+  "software-development": {
+    id: "software-development",
+    icon: Code2,
+    title: "Software Development",
+    tagline: "Custom software solutions to turn your ideas into reality.",
+    hero: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
+    overview:
+      "We build custom web, mobile and enterprise software that fits your business like a glove. From discovery to deployment and support, our product teams deliver reliable, scalable solutions.",
+    capabilities: [
+      "Web application development",
+      "Mobile app development (iOS & Android)",
+      "API design and integration",
+      "Enterprise systems and ERPs",
+      "Legacy modernization",
+      "QA and automated testing",
+    ],
+    benefits: [
+      "Software tailored to your workflows",
+      "Faster time-to-market",
+      "Improved user experience",
+      "Scalable architecture",
+    ],
+    technologies: ["React", "Node.js", "Python", "PostgreSQL", "React Native", "Docker"],
+    process: [
+      { step: "01", title: "Discover", desc: "We define goals, users and scope." },
+      { step: "02", title: "Design", desc: "We prototype and validate the UX." },
+      { step: "03", title: "Build", desc: "We develop in agile sprints." },
+      { step: "04", title: "Launch", desc: "We deploy, monitor and iterate." },
+    ],
+  },
+  cybersecurity: {
+    id: "cybersecurity",
+    icon: ShieldCheck,
+    title: "Cybersecurity",
+    tagline: "Protecting your data, users and business from digital threats.",
+    hero: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop",
+    overview:
+      "Cyber threats are evolving fast. We help you stay ahead with layered security controls, continuous monitoring and rapid incident response, aligned to industry best practices and compliance requirements.",
+    capabilities: [
+      "Security assessments and audits",
+      "Penetration testing",
+      "Threat detection and monitoring (SOC)",
+      "Identity and access management",
+      "Incident response and forensics",
+      "Compliance and risk management",
+    ],
+    benefits: [
+      "Reduced risk of breaches",
+      "Faster threat detection",
+      "Regulatory compliance",
+      "Business continuity",
+    ],
+    technologies: ["CrowdStrike", "Microsoft Defender", "Splunk", "Okta", "Wazuh", "Kali Linux"],
+    process: [
+      { step: "01", title: "Assess", desc: "We map your security posture." },
+      { step: "02", title: "Harden", desc: "We implement layered controls." },
+      { step: "03", title: "Monitor", desc: "We detect and respond 24/7." },
+      { step: "04", title: "Improve", desc: "We continuously refine defenses." },
+    ],
+  },
+  "digital-transformation": {
+    id: "digital-transformation",
+    icon: TrendingUp,
+    title: "Digital Transformation",
+    tagline: "Modernize your operations and embrace the future of technology.",
+    hero: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop",
+    overview:
+      "We help organizations reimagine how they operate, serve customers and use data. By combining strategy, technology and change management, we turn digital ambition into measurable outcomes.",
+    capabilities: [
+      "Digital strategy and roadmaps",
+      "Process automation and RPA",
+      "Data platforms and analytics",
+      "Cloud adoption and modernization",
+      "Customer experience design",
+      "Change management and training",
+    ],
+    benefits: [
+      "Increased operational efficiency",
+      "Data-driven decision making",
+      "Better customer experiences",
+      "Competitive advantage",
+    ],
+    technologies: ["Power Platform", "Azure", "Snowflake", "UiPath", "Tableau", "Zapier"],
+    process: [
+      { step: "01", title: "Envision", desc: "We align on vision and priorities." },
+      { step: "02", title: "Plan", desc: "We define a phased roadmap." },
+      { step: "03", title: "Execute", desc: "We deliver in measurable increments." },
+      { step: "04", title: "Scale", desc: "We embed and expand impact." },
+    ],
+  },
+};
+
+export type ServiceDetailKey = keyof typeof serviceDetails;
